@@ -1,0 +1,36 @@
+.SearchInput{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.SearchInput input{
+    background-color: #0d1117;
+    color: #ffffff;
+    font-size: 32px;
+    padding: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.SearchInput button{
+    font-size: 24px;
+    background-color: #0d1117;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.SearchInput button:hover{
+    background-color: #161b22;
+}
+
+.SearchInput button:active{
+    background-color: #1d1f22;
+}

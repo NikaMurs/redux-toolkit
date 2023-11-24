@@ -1,0 +1,33 @@
+.Card{
+    display: flex;
+    width: 90%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.Card .cardImg{
+    height: 150px;
+    z-index: -1;
+}
+
+.Card .cardInfo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.Card .cardInfo .cardTitle{
+    width: 100%;
+    margin: 0;
+    font-size: 36px;
+}
+
+.Card .cardInfo .cardYear{
+    width: 100%;
+    margin: 0;
+    color: #7b7b7b;
+    font-size: 14px;
+}

@@ -1,0 +1,36 @@
+.Menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.Menu li{
+    font-size: 24px;
+}
+
+.menuItem{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menuItem:hover{
+    background-color: #161b22;
+}
+
+.active{
+    border-bottom: 2px solid #f78166;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.Menu .icon{
+    font-size: 20px;
+    margin-right: 5px;
+}
