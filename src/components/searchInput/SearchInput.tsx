@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import './searchInput.css'
+import {action} from './action'
 
 export default function SearchInput() {
     const dispatch = useDispatch()
@@ -8,10 +9,7 @@ export default function SearchInput() {
         e.preventDefault()
         const formData = new FormData(e.currentTarget);
         const search = formData.get('search');
-        dispatch({
-            type: 'SEARCH',
-            payload: search
-        })
+        dispatch(action(search as string))
     }
 
     return (

@@ -1,6 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 const initialState = {
+    data: {},
     search: {
         "Search": [
             {
@@ -84,8 +85,8 @@ export const filmsReducer = createSlice({
     name: 'films',
     initialState: initialState,
     reducers: {
-        SEARCH: (state, action) => {
-            
+        FetchData: (state, action) => {
+            state.data = action.payload
         }
     }
 })
