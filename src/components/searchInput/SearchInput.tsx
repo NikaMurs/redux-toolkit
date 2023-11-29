@@ -9,12 +9,13 @@ export default function SearchInput() {
         e.preventDefault()
         const formData = new FormData(e.currentTarget);
         const search = formData.get('search');
+        //@ts-ignore
         dispatch(action(search as string))
     }
 
     return (
         <form className='SearchInput' onSubmit={onSubmit}>
-            <input type="text" name='search' placeholder='Терминатор...' />
+            <input type="text" name='search' placeholder='Catch me if you...' />
             <button>Найти</button>
         </form>
     )

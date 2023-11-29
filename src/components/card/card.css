@@ -1,13 +1,24 @@
 .Card{
+    position: relative;
     display: flex;
     width: 90%;
     border: 1px solid #ffffff;
     border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #161b22;
+}
+
+.cardStar{
+    color: #ffd355;
+    position: absolute;
+    font-size: 24px;
+    top: 10px;
+    right: 10px;
 }
 
 .Card .cardImg{
     height: 150px;
-    z-index: -1;
 }
 
 .Card .cardInfo{

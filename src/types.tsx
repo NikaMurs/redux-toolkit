@@ -6,12 +6,27 @@ export type FilmItemType = {
     imdbID: string
 }
 
+
+export type FilmInfoType = {
+    Poster: string,
+    Title: string,
+    Year: string,
+    Genre: string,
+    Runtime: string,
+    Director: string,
+    Actors: string,
+    imdbRating: string
+}
+
 export type SearchResponceType = {
+    loading: boolean,
     search: {
         Search: Array<FilmItemType>,
-        responce: string,
+        Response: string,
         totalResult: string
     }
+    filmInfo: FilmInfoType,
+    favorites: Array<FilmItemType>
 }
 
 export type StateType = {

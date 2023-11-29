@@ -1,0 +1,59 @@
+.CardInfo{
+    min-width: 600px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #161b22;
+}
+
+.cardInfoImg{
+    height: 70%;
+}
+
+.cardInfoInfo{
+    margin-left: 10px;
+}
+
+
+.cardInfoTitle{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 5px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.cardInfoGenre span, .cardInfoRuntime span, .cardInfoDirector span, .cardInfoActors span, .cardInfoRating span{
+    font-size: 22px;
+    margin: 5px;
+    font-weight: 400;
+}
+
+.cardInfoGenre, .cardInfoRuntime, .cardInfoDirector, .cardInfoActors, .cardInfoRating{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.loading{
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.loading p{
+    margin-bottom: 0;
+}
+
+.fa-spinner{
+    color: #ffffff;
+    font-size: 62px;
+    animation: 3s linear infinite rotate;
+}
+
